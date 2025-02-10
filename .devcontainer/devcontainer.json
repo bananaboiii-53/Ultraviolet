@@ -1,0 +1,16 @@
+{
+  "name": "Ultraviolet Proxy",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  }
+}
